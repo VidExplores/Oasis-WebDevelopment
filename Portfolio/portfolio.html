@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidisha Biswal | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Vidisha Biswal</h1>
+            <p>Software Developer | Java Programmer</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Hello! I am Vidisha Biswal, a passionate software and Java Programmer. I love coding and continuously learning new technologies to improve my skills.</p>
+        <p>As a computer science fresher, my goal is to apply my academic knowledge and technical skills to solve real-world problems through innovative software development. I aim to work collaboratively in a dynamic environment, learn and adapt quickly, and contribute to the growth and success of the organization while continuously expanding my expertise in computer science and emerging technologies.</p>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>My Projects</h2>
+        <div class="project">
+            <img src="guessNumber.jpg" alt="Project 1">
+            <div class="project-info">
+                <h3>Number Guessing Game</h3>
+                <p>A simple and interactive Java-based number guessing game where the player tries to guess a randomly generated number between 1 and 100. The game allows up to 5 attempts and provides feedback after each guess, indicating whether the guessed number is less than or greater than the target number. If the player guesses correctly within the allowed attempts, they win; otherwise, the correct number is revealed after the attempts are exhausted. This project demonstrates basic programming concepts, engaging way to practice and improve problem-solving skills.</p>
+                <a href="https://github.com/VidExplores/JavaProject/tree/main/Number%20Guessing%20Game" class="btn">View Project</a>
+            </div>
+        </div>
+        <div class="project">
+            <img src="onlineReservation.jpg" alt="Project 2">
+            <div class="project-info">
+                <h3>Online Reservation System</h3>
+                <p>This Java-based console application enables users to efficiently manage seat reservations. It features a user-friendly menu for viewing the seat map, reserving seats, and canceling existing reservations. The application handles seat availability and provides feedback for invalid or duplicate actions. Key functionalities include displaying reserved and available seats, ensuring seat number validation, and confirming reservations or cancellations. This project demonstrates essential Java programming concepts, offering a practical example of building interactive applications.</p>
+                <a href="https://github.com/VidExplores/JavaProject/tree/main/Online%20Reservation%20System" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Vidisha Biswal. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/vidisha-biswal-b87004302/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/VidExplores" target="_blank">GitHub</a></li>
+                <li><a href="biswalvidisha@gmail.com">Email</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
