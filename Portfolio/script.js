@@ -1,13 +1,20 @@
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contact-form');
     
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent traditional form submission
 
-    if (name && email && message) {
-        alert('Thank you for your message, ' + name + '! I will get back to you soon.');
-    } else {
-        alert('Please fill out all fields.');
-    }
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        const subject = encodeURIComponent('Inquiry from ' + name);
+        const body = encodeURIComponent(`Hello Vidisha,\n\nMy name is ${name}.\n\n${message}\n\nYou can contact me back at ${email}.`);
+
+        const mailtoLink = `mailto:biswalvidisha@gmail.com?subject=${subject}&body=${body}`;
+
+        console.log(mailtoLink); // Check the generated link in the console
+
+        window.location.href = mailtoLink; // Open mail client
+    });
 });
